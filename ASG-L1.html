@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keenan Gangewere – Professional Web Developer Portfolio</title>
+
+    <!-- Meta information -->
+    <meta name="description" content="Professional portfolio that discusses skills and experience.">
+    <meta name="author" content="Keenan Gangewere">
+    <meta name="keywords" content="portfolio, web developer, HTML5, CSS, projects, skills">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="ASG-L2.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /*
+          Internal CSS is used here only for page-specific overrides
+          and development-stage tweaks that are not reused across
+          other pages of the site.
+        */
+
+        header img {
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= Header ================= -->
+    <header id="top">
+        <h1>Keenan Gangewere</h1>
+
+        <img
+            src="/Users/keenangangewere/Desktop/gradPhoto.png"
+            alt="Professional self portrait"
+            width="150"
+            height="150"
+            style="border: 4px solid white;"
+        >
+        <!-- Inline style used for a one-time visual emphasis on the profile image -->
+
+        <p><em>College student looking to get into IT</em></p>
+
+        <!-- Navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#adventures">Recent Adventures</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= Main Content ================= -->
+    <main>
+
+        <!-- ===== About Section ===== -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <article>
+                <h3>Professional Summary</h3>
+                <p>
+                    I am a <strong>second year student</strong> at Penn State and my major is
+                    <strong>Information Technology</strong>.
+                </p>
+                <p>
+                    My current goal at the time of writing is to learn to write in HTML.
+                    I am already proficient in Python and Java as programming languages,
+                    and would like to expand my knowledge.
+                </p>
+            </article>
+
+            <article>
+                <h3>Hobbies</h3>
+                <p>
+                    In my free time I enjoy hiking, playing video games such as GTA5,
+                    and being with my friends. I also work a job at Target during weekends
+                    for extra money.
+                </p>
+            </article>
+        </section>
+
+        <!-- ===== Aside ===== -->
+        <aside aria-label="Supplementary information">
+            <h2>Quick Facts</h2>
+            <ul>
+                <li>I am 20 years old.</li>
+                <li>I speak Spanish.</li>
+                <li>My favorite music genre is metal.</li>
+                <li>My favorite football team is the Patriots.</li>
+            </ul>
+        </aside>
+
+        <!-- ===== Skills Section ===== -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <article>
+                <ul>
+                    <li>Programming in Python</li>
+                    <li>Programming in Java</li>
+                    <li>Basic HTML</li>
+                </ul>
+            </article>
+
+            <!-- Skills Table -->
+            <table>
+                <caption>Technical Skill Proficiency Levels</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Skill</th>
+                        <th scope="col">Proficiency</th>
+                        <th scope="col">Years of Experience</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Python</th>
+                        <td>Advanced</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Java</th>
+                        <td>Intermediate</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">HTML5</th>
+                        <td>Beginner</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ===== Recent Adventures Section ===== -->
+        <section id="adventures">
+            <h2>Recent Adventures</h2>
+
+            <article>
+                <h3>Camping Trip</h3>
+
+                <figure>
+                    <img
+                        src="/Users/keenangangewere/Desktop/camping.png"
+                        alt="Picture from on a mountain overlooking a river."
+                        width="400"
+                        height="250"
+                        loading="lazy"
+                    >
+                    <figcaption>
+                        The view we saw waking up on a camping trip.
+                    </figcaption>
+                </figure>
+
+                <details>
+                    <summary>Camping Story</summary>
+                    <p>
+                        I went camping with some of my friends last summer.
+                        We camped on the top of a mountain overlooking the
+                        Delaware river. We all had a great time.
+                    </p>
+                </details>
+            </article>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                Email me at
+                <a href="mailto:kpg5618@psu.edu">kpg5618@psu.edu</a>
+                or call
+                <a href="tel:+6103929651">+1 (610) 392-9651</a>.
+            </p>
+
+            <!-- Contact Form -->
+            <form action="https://example.com/submit" method="post" aria-label="Contact form">
+                <fieldset>
+                    <legend>Send a Message</legend>
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="general">General Inquiry</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="project">Project Opportunity</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="2" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+    <footer>
+        <p>&copy; 2026 Keenan Gangewere. All rights reserved.</p>
+        <p>
+            Last updated:
+            <time datetime="2026-01-23">January 23, 2026</time>
+        </p>
+        <p>
+            Back to <a href="#top">top of page</a>
+        </p>
+    </footer>
+
+</body>
+</html>
