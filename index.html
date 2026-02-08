@@ -203,12 +203,6 @@
                     <button type="submit">Send Message</button>
                 </fieldset>
             </form>
-
-            <!-- Thank you message container -->
-            <div id="thankYouMessage" style="display:none; padding: 1rem; background-color: var(--clr-success); color: white; border-radius: var(--radius-md); margin-top: var(--space-4);">
-                <h3>Thank you!</h3>
-                <p>Your message has been sent successfully. I will get back to you soon.</p>
-            </div>
             
         </section>
 
@@ -225,17 +219,6 @@
             Back to <a href="#top">top of page</a>
         </p>
     </footer>
-
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent actual form submission
-
-        this.style.display = 'none';
-
-        document.getElementById('thankYouMessage').style.display = 'block';
-
-    });
-</script>
     
 </body>
 </html>
